@@ -1,10 +1,25 @@
-import React from 'react'
+import React from 'react';
 
-import { ExampleComponent } from 'react-checkbox-tis'
-import 'react-checkbox-tis/dist/index.css'
+import { Checkbox, labelPosition } from 'react-checkbox-tis';
+import 'react-checkbox-tis/dist/index.css';
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  return (
+    <div className='App'>
+      <div className='Title'>
+        Checkbox Tis
+      </div>
+      <Checkbox
+        className='Checkbox'
+        onChange={(e, checked) => console.log(checked)}
+        label='Remember me'
+        color='#0085fe'
+        backgroundColor='#0085fecc'
+        labelPosition={labelPosition.start}
+        darkMode={false}
+      />
+    </div>
+  );
+};
 
-export default App
+export default App;

@@ -1,0 +1,25 @@
+$font-family-medium: Helvetica-Neue-Medium;
+$font-light: #2a2a2a;
+$font-dark: #e5e6ec;
+
+.CheckboxForm {
+  > span:last-child {
+    font-family: $font-family-medium !important;
+    font-size: var(--font-size-x-small) !important;
+    color: $font-light;
+  }
+
+  &.Dark {
+    > span:last-child {
+      color: $font-dark;
+    }
+  }
+}
+
+.Checkbox {
+  margin-right: 5px !important;
+  color: $font-light;
+  &.Dark {
+    color: $font-dark;
+  }
+}
