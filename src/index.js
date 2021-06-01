@@ -37,8 +37,8 @@ export const Checkbox = ({
   if (!label)
     return (
       <WhiteCheckbox
-        className={classNames(css.Checkbox, {
-          [css.Dark]: darkMode
+        className={classNames(css.Checkbox_CheckboxTis, {
+          [css.Dark_CheckboxTis]: darkMode
         }, className)}
         onChange={e => onChange(e.target.value, e.target.checked)}
         value={label}
@@ -49,13 +49,13 @@ export const Checkbox = ({
 
   return (
     <FormControlLabel
-      className={classNames(css.CheckboxForm, {
-        [css.Dark]: darkMode
+      className={classNames(css.CheckboxForm_CheckboxTis, {
+        [css.Dark_CheckboxTis]: darkMode
       }, className)}
       control={
         <WhiteCheckbox
-          className={classNames(css.Checkbox, {
-            [css.Dark]: darkMode
+          className={classNames(css.Checkbox_CheckboxTis, {
+            [css.Dark_CheckboxTis]: darkMode
           }, className)}
           onChange={e => onChange(e.target.value, e.target.checked)}
           value={label}
