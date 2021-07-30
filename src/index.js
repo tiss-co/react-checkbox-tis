@@ -12,7 +12,8 @@ export const Checkbox = ({
   checked,
   color = '#5E80C3',
   backgroundColor = '#d8d8d8',
-  darkMode = false
+  darkMode = false,
+  ...props
 }) => {
   const WhiteCheckbox = withStyles({
     root: {
@@ -44,6 +45,7 @@ export const Checkbox = ({
         value={label}
         size='small'
         checked={checked}
+        {...props}
       />
     );
 
@@ -61,6 +63,7 @@ export const Checkbox = ({
           value={label}
           size='small'
           checked={checked}
+          {...props}
         />
       }
       label={label}
