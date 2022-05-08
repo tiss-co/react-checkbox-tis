@@ -13,6 +13,7 @@ export const Checkbox = ({
   color = '#5E80C3',
   backgroundColor = '#d8d8d8',
   darkMode = false,
+  id,
   ...props
 }) => {
   const WhiteCheckbox = withStyles({
@@ -54,6 +55,7 @@ export const Checkbox = ({
       className={classNames(css.CheckboxForm_CheckboxTis, {
         [css.Dark_CheckboxTis]: darkMode
       }, className)}
+      id={id}
       control={
         <WhiteCheckbox
           className={classNames(css.Checkbox_CheckboxTis, {
@@ -88,4 +90,5 @@ Checkbox.propTypes = {
   color: PropTypes.string,
   backgroundColor: PropTypes.string,
   darkMode: PropTypes.bool,
+  id: PropTypes.string,
 };
